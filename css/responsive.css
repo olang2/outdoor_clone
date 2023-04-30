@@ -1,0 +1,201 @@
+@media(max-width:768px){
+  body{
+    overflow-x: hidden;
+  }
+  .trigger{
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    cursor: pointer;
+  }
+  .trigger span{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.1s;
+  }
+  .trigger span:nth-child(1){
+    top: 0;
+  }
+  .trigger span:nth-child(2){
+    top: 50%;
+    transform: translatey(-50%);
+  }
+  .trigger span:nth-child(3){
+    bottom: 0;
+  }
+  /* trigger active 클래스 추가 */
+
+  .trigger.active span:nth-child(1){
+    top:50%;
+    transform: rotate(35deg) translateY(-50%);
+  }
+  .trigger.active span:nth-child(2){
+   opacity: 0;
+  }
+  .trigger.active span:nth-child(3){
+    bottom:50%;
+    transform: rotate(-35deg) translateY(50%);
+  }
+  /* common */
+  .inner{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.205);
+    padding: 20px 0;
+  }
+  /* header */
+  .gnb{
+    display: none;
+  }
+  .gnb ul{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .gnb ul li a{
+    display: block;
+    padding: 8px 0;
+    color: #000;
+  }
+  .header_inner{
+    height: auto;
+    flex-direction: column;
+  }
+  .sns.on,.gnb.on{
+    display: flex !important;
+  }
+  .sns{
+    display: none;
+    margin-top: 10px;
+  }
+  .sns a{
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    background-color: #fff;
+  }
+  .sns a img{
+    width: 15px;
+    filter: invert(0);
+  }
+  .logo img{
+    transform: scale(0.7);
+    filter: invert(1);
+  }
+  .title h1{
+    font-size: 3em;
+  }
+  button.orange_btn{
+    padding: 10px 30px;
+    margin-top: 30px;
+  }
+/* about */
+.about_con{
+  flex-direction: column;
+  padding: 50px 0;
+}
+.about_con .img_box{
+  order: 1;
+  margin-bottom: 20px;
+}
+.about_con .desc{
+  order: 2;
+}
+/* news */
+.news_heading h3{
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+.news_inner .items{
+  flex-direction: column;
+}
+.items .item{
+  width: 90%;
+  margin: 20px auto;
+}
+/* team */
+.team{
+  margin: 50px 0;
+}
+.team h2{
+  font-size: 30px;
+}
+.my_slider{
+  margin: 20px 0;
+}
+/* banner */
+.banner{
+  height: 50vh;
+}
+.banner_heading h2{
+  font-size: 25px;
+}
+/* blog */
+.blog{
+  background-image: none;
+  text-align: center;
+}
+.blog_header{
+  text-align: center;
+  margin: 50px 0;
+}
+
+.blog_header p{
+  font-size: 15px;
+}
+.blog_post{
+  flex-direction: column;
+}
+.post_item{
+  flex-direction: column;
+}
+.post_item .post_desc{
+  padding: 0 5px;
+  padding: 0;
+}
+.post_item .post_desc p{
+  width: 100%;
+}
+.post_item .post_img {
+  margin: auto;
+}
+.resent{
+  margin-right: 0;
+}
+.blog_post h6{
+  text-align: center;
+  font-size: 1.5em;
+}
+.shared{
+  margin: auto;
+  width: 100%;
+}
+/* footer */
+.footer_content{
+  display: block;
+  font-size: 0.8em;
+}
+.infomation{
+  margin: 10px 0;
+}
+.client{
+  flex-direction: column;
+}
+.comment{
+  padding-right: 1em;
+  margin: 2em 1em;
+  text-align: center;
+}
+.btns a{
+  display: block;
+  margin: auto;
+}
+.btns a:nth-child(2){
+  margin-top: 10px;
+}
+}

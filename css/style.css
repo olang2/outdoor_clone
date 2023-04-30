@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* font-family: 'Permanent Marker', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Dosis', sans-serif; */
+
+*{margin: 0;padding: 0;
+box-sizing: border-box;}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color:#222;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+ul,li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: 100%;
+  font-weight: normal;
+}
+button{
+  border: none;
+  cursor: pointer;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  color: #f2f2f2;
+  box-shadow: none;
+}
+/* common */
+.inner{
+  width: 1300px; 
+  margin: auto;
+  padding: 100px 0;
+}
+
+/* header */
+header{
+  height: 90vh;
+  background-image: url(../img/slider-image-2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.header_inner{
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+.gnb ul{
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+}
+.gnb ul li a{
+  font-family: 'Dosis', sans-serif;
+  font-weight:700;
+  color: #f2f2f2;
+  transition: 0.2s;
+}
+.gnb ul li a:hover{
+  color: #ef6210;
+}
+.sns a{
+  background-color: #ef6210;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  /* line-height: 55px; */
+  padding-top: 12px;
+  margin-left: 10px;
+  text-align: center;
+}
+.sns a img{
+  width: 22px;
+  filter: invert(100%);
+}
+.title{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #f2f2f2;
+}
+.marker{
+  font-family: 'Permanent Marker', cursive;
+  font-size:1.2em;
+  color: #f2f2f2;
+}
+.title h1{
+  font-weight: 800;
+  font-size: 5.5em;
+  line-height: 1;
+  margin-top: 15px;
+}
+/* 주황색버튼 */
+button.orange_btn{
+  background-color: #ef6210;
+  padding: 15px 40px;
+  margin-top: 40px;
+}
+/*aout */
+.about_con{
+  display: flex;
+  align-items: center;
+}
+.about_con .desc{
+  flex:3;
+  text-align: center;
+}
+.about_con .desc h2{
+  font-weight: 800;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.about_con .desc p{
+  padding: 0 60px;
+}
+.about_con .img_box{
+  flex: 2;
+}
+.about_con .img_box img{
+  border-radius: 57% 43% 40% 60% / 45% 52% 48% 55% ;
+  width: 100%;
+}
+/* news */
+.news{
+  background-color: #272727;
+}
+.news_heading{
+  text-align: center;
+  color: #f2f2f2;
+}
+.news_heading h3{
+  font-size: 3.3em;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+.news_inner .items{
+  display: flex;
+  justify-content: space-between;
+}
+.items .item{
+  width: 390px;
+  height: 630px;
+  background-color: #fff;
+  border-radius: 2em 0 2em 0;
+  overflow: hidden;
+}
+.items .item .up_img{
+  height: 400px;
+  overflow: hidden;
+}
+.items .item .up_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.items .item .down_desc{
+  padding: 20px 30px;
+}
+.down_desc .badge{
+  background-color: #ef6210;
+  color: #fff;
+  padding: 0.3em 1em;
+}
+.down_desc .badge_bk{
+  background-color: #000;
+  color: #fff;
+  padding: 0.3em 1em;
+}
+
+.down_desc h4{
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.3em;
+  margin: 0.5em 0;
+}
+.down_desc p{
+  line-height:1.1em;
+  margin-bottom: 2em;
+}
+a.more{
+  color: #ef6210;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+a.more img{
+  margin-left: 5px;
+  transition: 0.3s;
+}
+a.more:hover img{
+  transform: translateX(1em);
+}
+/* team */
+
+.team h2{
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.team hr{
+  width: 126px;
+  height: 4px;
+  border: none;
+  background: #ef6210;
+  margin: auto;
+}
+.team_content{
+  width: 95%;
+  margin: auto;
+}
+.my_slider{
+  margin: 100px 0;
+}
+.my_slider .client{
+  display: flex;
+  align-items: center;
+}
+.my_slider .client img{
+  margin-right: 1em;
+}
+.my_slider .client span b{
+  display: block;
+}
+.comment{
+  padding-right: 2em;
+  margin: 2em 1em;
+}
+
+/* banner */
+.banner{
+  width: 100%;
+  height: 650px;
+  background: url(../img/img-81.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom 10% center;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.banner::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  mix-blend-mode: multiply;
+}
+.banner_heading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #f2f2f2;
+}
+.banner_heading h2{
+  font-size: 3em;
+  line-height: 1.2em;
+  margin-top: 10PX;
+}
+/* download */
+.download{
+  height: 250px;
+  background-color: #252525;
+  color: #f2f2f2;
+  display: flex;
+  text-align: center;
+}
+.btns{
+  margin-top: 35px;
+}
+.btns a{
+  width: 220px;
+  height: 35px;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+  line-height: 35px;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+}
+.btns a:nth-child(1){
+  background-color: #ef6210;
+  color: #fff;
+  font-family: 'Dosis', sans-serif; 
+}
+.btns a:nth-child(2){
+  color: #333;
+  font-family: 'Dosis', sans-serif; 
+}
+/* blog */
+.blog{
+  background-image: url(../img/bottom-section-background.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.blog_content{}
+h6{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* 블로그 상단 */
+.blog_header h2{
+  font-weight: 600;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 20px 0;
+  letter-spacing: 0.5px;
+}
+.blog_header p{
+  font-size: 1.7em;
+  margin-bottom: 20px;
+}
+
+/* 블로그 하단 */
+.blog_post{
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.blog_post h6{
+  margin: 30px 0;
+}
+.resent{
+  flex:2;
+  margin-right: 100px;
+}
+.shared{
+  width: 350px;
+}
+/* 구분선 */
+.divider{
+  border: none;
+  border-bottom:1px solid #b3b3b3;
+  margin:50px 0;
+}
+/* 블로그 영역 이미지 */
+.post_item{
+  display: flex;
+}
+.post_item .post_img{
+  width: 350px;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 2em 0 2em 0;
+}
+.post_item .post_img img{
+  width: 100%;
+}
+.post_item .post_desc{
+  flex: 2;
+  padding: 0 20px;
+}
+.post_item .post_desc h3{
+  font-size: 1.7em;
+  text-transform: uppercase;
+}
+.post_item .post_desc p{
+  margin: 5px 0;
+  width: 80%;
+}
+.post_item .post_desc span{
+  color: #6d6d6d;
+}
+/*blog shared */
+.shared .post_item{
+  flex-direction: column;
+}
+.shared .post_desc{
+  padding: 0; 
+}
+/* resent 이미지 조절 */
+.blog1{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.blog3{
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+  object-position:left -200px top -200px;
+}
+/* footer */
+.footer{
+  background-color: #000;
+  color: #959595;
+}
+.footer a{
+  text-decoration: none;
+  color: #959595;
+}
+.footer_content{
+  display: flex;
+  text-align: center;
+}
+.community{
+  flex: 1;
+}
+.footer_content ul li:nth-child(1),.footer_content ul li:nth-child(1) a{
+  color: #d9d9d9;
+  font-weight: 500;
+}
+.infomation{
+  flex: 1;
+}
+.newsletter{
+  flex: 2;
+}
+.newsletter li:nth-child(2){
+  margin-bottom: 20px;
+}
+.gototop{
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  background:#ff6600;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  opacity: 0;
+  transition: 0.3s;
+}
+.gototop.active{
+  bottom: 50px;
+  opacity: 1;
+}
